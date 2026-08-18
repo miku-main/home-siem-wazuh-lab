@@ -86,4 +86,5 @@ The dashboard successfully loaded and confirmed that the Wazuh server was operat
 Currently no endpoint agents have been deployed yet.
 
 I have learned how virtualization is required to run the Wazuh lab environment and how the Wazuh OVA simplifies the deployment of the SIEM server. I also learned that the Wazuh server provides the central location where endpoint data and security alerts will eventually be collected and analyzed.
-![Wazuh Dashboard](screenshots/wazuh-dashboard.png)
+
+![Wazuh Dashboard](screenshots/wazuh-overview.png)
