@@ -45,27 +45,18 @@ If you didn't get any pop up then ignore doing this part.
 To fix this, you go to File Explorer and go to the path C:\Users\Name\Documents\Virtual Machines\Wazuh-SIEM, right click on Wazuh-SIEM and make sure the file type is VMware virtual machine configuration (.vmc).
 
 Open it on notepad and paste this at the very bottom.
-
+```bash
 checkpoint.vmState = ""
-
 cpuid.0.eax = "0000:0000:0000:0000:0000:0000:0000:1011"
-
 cpuid.0.ebx = "0111:0101:0110:1110:0110:0101:0100:0111"
-
 cpuid.0.ecx = "0110:1100:0110:0101:0111:0100:0110:1110"
-
 cpuid.0.edx = "0100:1001:0110:0101:0110:1110:0110:1001"
-
 cpuid.1.eax = "0000:0000:0000:0001:0000:0110:0111:0001"
-
 cpuid.1.ebx = "0000:0010:0000:0001:0000:1000:0000:0000"
-
 cpuid.1.ecx = "1000:0010:1001:1000:0010:0010:0000:0011"
-
 cpuid.1.edx = "0000:0111:1000:1011:1111:1011:1111:1111"
-
 featureCompat.enable = "FALSE"
-
+```
 Afterward I was able to successfully start virtual machines.
 
 ### 2. Wazuh OVA Deployment
